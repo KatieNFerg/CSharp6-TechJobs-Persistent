@@ -50,7 +50,7 @@ namespace TechJobs6Persistent.Controllers
                 };
                 context.Jobs.Add(newJob);
                 context.SaveChanges();
-                return Redirect("/Jobs");
+                return Redirect("/");
             }
             return View(addJobViewModel);
         }
@@ -73,7 +73,7 @@ namespace TechJobs6Persistent.Controllers
 
             context.SaveChanges();
 
-            return Redirect("/Job");
+            return Redirect("/Jobs");
         }
 
         public IActionResult Detail(int id)

@@ -12,7 +12,7 @@ public class AddJobViewModel
 
     public int EmployerId {get; set; }
 
-    public List<SelectListItem> Employers { get; set; }
+    public List<SelectListItem>? Employers { get; set; }
 
     public AddJobViewModel(List<Employer>employers)
     {
